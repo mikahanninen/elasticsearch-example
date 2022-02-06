@@ -1,0 +1,4 @@
+elastic:
+  cloud_id: <ELASTIC-CLOUD-ID>
+  username: <ELASTIC-USERNAME>
+  password: <ELASTIC-PASSWORD>

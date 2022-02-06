@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.7.5 on darwin)" generated="20220206 21:32:06.405" rpa="true" schemaversion="2">
+<suite id="s1" name="Tasks" source="/Users/mika/koodi/testground/elasticsearch/tasks.robot">
+<test id="s1-t1" name="Minimal task">
+<kw name="Authenticate" library="ElasticLibrary">
+<var>${result}</var>
+<msg timestamp="20220206 21:32:07.501" level="INFO">GET https://d4d19eae654e4c7b90e51098c4409cf9.us-east4.gcp.elastic-cloud.com:443/ [status:401 duration:0.584s]</msg>
+<msg timestamp="20220206 21:32:07.503" level="FAIL">AuthenticationException: AuthenticationException(401, 'security_exception', 'unable to authenticate with provided credentials and anonymous access is not allowed for this request')</msg>
+<status status="FAIL" starttime="20220206 21:32:06.906" endtime="20220206 21:32:07.504"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>result: ${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220206 21:32:07.504" endtime="20220206 21:32:07.504"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Done.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220206 21:32:07.504" endtime="20220206 21:32:07.504"/>
+</kw>
+<status status="FAIL" starttime="20220206 21:32:06.906" endtime="20220206 21:32:07.505">AuthenticationException: AuthenticationException(401, 'security_exception', 'unable to authenticate with provided credentials and anonymous access is not allowed for this request')</status>
+</test>
+<status status="FAIL" starttime="20220206 21:32:06.407" endtime="20220206 21:32:07.505"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
